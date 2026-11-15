@@ -1,0 +1,46 @@
+GIT COMMANDS USED IN THIS ASSIGNMENT
+
+git init -b main
+  Initializes a new Git repository in the current folder, with main as the default branch.
+
+git config user.name "<name>" / git config user.email "<email>"
+  Sets the author identity stored in this repository's commits.
+
+git status --short
+  Shows changed, staged and untracked files in a compact form.
+
+git add <files>
+  Stages the named files so they are included in the next commit.
+
+git commit -m "<message>"
+  Records the staged changes as a new commit with the given message.
+
+git diff --stat
+  Summarizes which files changed and by how many lines since the last commit.
+
+git commit -am "<message>"
+  Stages all modified tracked files and commits them in one step.
+
+git branch feature
+  Creates a new branch named feature at the current commit.
+
+git switch feature / git switch main
+  Moves the working directory to the named branch.
+
+git merge feature --no-ff -m "<message>"
+  Merges feature into the current branch, always creating a merge commit so branch activity stays visible.
+
+git log --oneline --graph --all
+  Displays the commit history of all branches as a compact graph.
+
+git revert HEAD --no-edit
+  Undoes the last commit by creating a new commit that reverses it, keeping history intact.
+
+git remote add origin <url>
+  Links the local repository to the GitHub repository under the name origin.
+
+git push -u origin main
+  Uploads the main branch to GitHub and sets origin/main as its upstream.
+
+git push origin feature
+  Uploads the feature branch to GitHub so the branch activity is visible there.
